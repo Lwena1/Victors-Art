@@ -1,169 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photo Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Victor Trocki Art</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f0f0f0;
-        }
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
             padding: 20px;
         }
-        .photo {
-            margin: 10px;
-            border: 5px solid #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s ease-in-out;
-        }
-        .photo:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-        }
-        img {
-            display: block;
-            width: 300px;
+
+        .grid img {
+            width: 100%;
             height: auto;
-            border-radius: 5px;
+            display: block;
+            border-radius: 8px;
+            cursor: pointer;
         }
-        a {
-            text-decoration: none;
+
+        .image-label {
+            text-align: center;
+            margin-top: 10px;
         }
     </style>
 </head>
+
 <body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>Navigation</strong></li>
+        </ul>
+        <ul>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#" role="button"></a></li>
+        </ul>
+    </nav>
 
-<div class="gallery">
-    <!-- Photo 1 -->
-    <div class="photo">
-        <a href="https://lh3.googleusercontent.com/pw/ABLVV86y3pUG5ULghxETnliL-Gs-O2BufYoG6HSrpW80agY3c738A8upWrx6gVxuZV8SiqL6beDDjvB5SHzq8B_3ymxc-1cPo3Mn1oLhnx3d_H4kf9Prph6_=w2400" target="_blank">
-            <img src="https://lh3.googleusercontent.com/pw/ABLVV86y3pUG5ULghxETnliL-Gs-O2BufYoG6HSrpW80agY3c738A8upWrx6gVxuZV8SiqL6beDDjvB5SHzq8B_3ymxc-1cPo3Mn1oLhnx3d_H4kf9Prph6_=w2400" alt="Colorful Art Piece">
-        </a>
-    </div>
-    <!-- Photo 2 -->
-    <div class="photo">
-        <a href="https://lh3.googleusercontent.com/pw/ABLVV861CyuqBs-U6vHkhQvJoo6Dm-2oSpXjuryttWcWqS9tYsBr4iCHQHGORDfY5tTPd9xrblwLcCF8T5pjQrcpiPu1SjtcuUJuvboassxEWEOXSWMWKW5q=w2400" target="_blank">
-            <img src="https://lh3.googleusercontent.com/pw/ABLVV861CyuqBs-U6vHkhQvJoo6Dm-2oSpXjuryttWcWqS9tYsBr4iCHQHGORDfY5tTPd9xrblwLcCF8T5pjQrcpiPu1SjtcuUJuvboassxEWEOXSWMWKW5q=w2400" alt="Serene Landscape">
-        </a>
-    </div>
-        <!-- Photo 3 -->
-    <div class="photo">
-        <a href="https://lh3.googleusercontent.com/pw/ABLVV861CyuqBs-U6vHkhQvJoo6Dm-2oSpXjuryttWcWqS9tYsBr4iCHQHGORDfY5tTPd9xrblwLcCF8T5pjQrcpiPu1SjtcuUJuvboassxEWEOXSWMWKW5q=w2400" target="_blank">
-            <img src="https://lh3.googleusercontent.com/pw/ABLVV861CyuqBs-U6vHkhQvJoo6Dm-2oSpXjuryttWcWqS9tYsBr4iCHQHGORDfY5tTPd9xrblwLcCF8T5pjQrcpiPu1SjtcuUJuvboassxEWEOXSWMWKW5q=w2400" alt="Serene Landscape">
-        </a>
-    </div>
-        <!-- Photo 3 -->
-    <div class="photo">
-        <a href="https://lh3.googleusercontent.com/pw/ABLVV861CyuqBs-U6vHkhQvJoo6Dm-2oSpXjuryttWcWqS9tYsBr4iCHQHGORDfY5tTPd9xrblwLcCF8T5pjQrcpiPu1SjtcuUJuvboassxEWEOXSWMWKW5q=w2400" target="_blank">
-            <img src="https://lh3.googleusercontent.com/pw/ABLVV861CyuqBs-U6vHkhQvJoo6Dm-2oSpXjuryttWcWqS9tYsBr4iCHQHGORDfY5tTPd9xrblwLcCF8T5pjQrcpiPu1SjtcuUJuvboassxEWEOXSWMWKW5q=w2400" alt="Serene Landscape">
-        </a>
-    </div>
-        <!-- Photo 3 -->
-    <div class="photo">
-        <a href="https://lh3.googleusercontent.com/pw/ABLVV861CyuqBs-U6vHkhQvJoo6Dm-2oSpXjuryttWcWqS9tYsBr4iCHQHGORDfY5tTPd9xrblwLcCF8T5pjQrcpiPu1SjtcuUJuvboassxEWEOXSWMWKW5q=w2400" target="_blank">
-            <img src="https://lh3.googleusercontent.com/pw/ABLVV861CyuqBs-U6vHkhQvJoo6Dm-2oSpXjuryttWcWqS9tYsBr4iCHQHGORDfY5tTPd9xrblwLcCF8T5pjQrcpiPu1SjtcuUJuvboassxEWEOXSWMWKW5q=w2400" alt="Serene Landscape">
-        </a>
-    </div>
-        <!-- Photo 3 -->
-    <div class="photo">
-        <a href="https://lh3.googleusercontent.com/pw/ABLVV861CyuqBs-U6vHkhQvJoo6Dm-2oSpXjuryttWcWqS9tYsBr4iCHQHGORDfY5tTPd9xrblwLcCF8T5pjQrcpiPu1SjtcuUJuvboassxEWEOXSWMWKW5q=w2400" target="_blank">
-            <img src="https://lh3.googleusercontent.com/pw/ABLVV861CyuqBs-U6vHkhQvJoo6Dm-2oSpXjuryttWcWqS9tYsBr4iCHQHGORDfY5tTPd9xrblwLcCF8T5pjQrcpiPu1SjtcuUJuvboassxEWEOXSWMWKW5q=w2400" alt="Serene Landscape">
-        </a>
-    </div>
-        <!-- Photo 3 -->
-    <div class="photo">
-        <a href="https://lh3.googleusercontent.com/pw/ABLVV861CyuqBs-U6vHkhQvJoo6Dm-2oSpXjuryttWcWqS9tYsBr4iCHQHGORDfY5tTPd9xrblwLcCF8T5pjQrcpiPu1SjtcuUJuvboassxEWEOXSWMWKW5q=w2400" target="_blank">
-            <img src="https://lh3.googleusercontent.com/pw/ABLVV861CyuqBs-U6vHkhQvJoo6Dm-2oSpXjuryttWcWqS9tYsBr4iCHQHGORDfY5tTPd9xrblwLcCF8T5pjQrcpiPu1SjtcuUJuvboassxEWEOXSWMWKW5q=w2400" alt="Serene Landscape">
-        </a>
-    </div>
-        <!-- Photo 3 -->
-    <div class="photo">
-        <a href="https://lh3.googleusercontent.com/pw/ABLVV861CyuqBs-U6vHkhQvJoo6Dm-2oSpXjuryttWcWqS9tYsBr4iCHQHGORDfY5tTPd9xrblwLcCF8T5pjQrcpiPu1SjtcuUJuvboassxEWEOXSWMWKW5q=w2400" target="_blank">
-            <img src="https://lh3.googleusercontent.com/pw/ABLVV861CyuqBs-U6vHkhQvJoo6Dm-2oSpXjuryttWcWqS9tYsBr4iCHQHGORDfY5tTPd9xrblwLcCF8T5pjQrcpiPu1SjtcuUJuvboassxEWEOXSWMWKW5q=w2400" alt="Serene Landscape">
-        </a>
-    </div>
-        <!-- Photo 3 -->
-    <div class="photo">
-        <a href="https://lh3.googleusercontent.com/pw/ABLVV861CyuqBs-U6vHkhQvJoo6Dm-2oSpXjuryttWcWqS9tYsBr4iCHQHGORDfY5tTPd9xrblwLcCF8T5pjQrcpiPu1SjtcuUJuvboassxEWEOXSWMWKW5q=w2400" target="_blank">
-            <img src="https://lh3.googleusercontent.com/pw/ABLVV861CyuqBs-U6vHkhQvJoo6Dm-2oSpXjuryttWcWqS9tYsBr4iCHQHGORDfY5tTPd9xrblwLcCF8T5pjQrcpiPu1SjtcuUJuvboassxEWEOXSWMWKW5q=w2400" alt="Serene Landscape">
-        </a>
-    </div>
-        <!-- Photo 3 -->
-    <div class="photo">
-        <a href="https://lh3.googleusercontent.com/pw/ABLVV861CyuqBs-U6vHkhQvJoo6Dm-2oSpXjuryttWcWqS9tYsBr4iCHQHGORDfY5tTPd9xrblwLcCF8T5pjQrcpiPu1SjtcuUJuvboassxEWEOXSWMWKW5q=w2400" target="_blank">
-            <img src="https://lh3.googleusercontent.com/pw/ABLVV861CyuqBs-U6vHkhQvJoo6Dm-2oSpXjuryttWcWqS9tYsBr4iCHQHGORDfY5tTPd9xrblwLcCF8T5pjQrcpiPu1SjtcuUJuvboassxEWEOXSWMWKW5q=w2400" alt="Serene Landscape">
-        </a>
-    </div>
-        <!-- Photo 3 -->
-    <div class="photo">
-        <a href="https://lh3.googleusercontent.com/pw/ABLVV861CyuqBs-U6vHkhQvJoo6Dm-2oSpXjuryttWcWqS9tYsBr4iCHQHGORDfY5tTPd9xrblwLcCF8T5pjQrcpiPu1SjtcuUJuvboassxEWEOXSWMWKW5q=w2400" target="_blank">
-            <img src="https://lh3.googleusercontent.com/pw/ABLVV861CyuqBs-U6vHkhQvJoo6Dm-2oSpXjuryttWcWqS9tYsBr4iCHQHGORDfY5tTPd9xrblwLcCF8T5pjQrcpiPu1SjtcuUJuvboassxEWEOXSWMWKW5q=w2400" alt="Serene Landscape">
-        </a>
-    </div>
-        <!-- Photo 3 -->
-    <div class="photo">
-        <a href="https://lh3.googleusercontent.com/pw/ABLVV861CyuqBs-U6vHkhQvJoo6Dm-2oSpXjuryttWcWqS9tYsBr4iCHQHGORDfY5tTPd9xrblwLcCF8T5pjQrcpiPu1SjtcuUJuvboassxEWEOXSWMWKW5q=w2400" target="_blank">
-            <img src="https://lh3.googleusercontent.com/pw/ABLVV861CyuqBs-U6vHkhQvJoo6Dm-2oSpXjuryttWcWqS9tYsBr4iCHQHGORDfY5tTPd9xrblwLcCF8T5pjQrcpiPu1SjtcuUJuvboassxEWEOXSWMWKW5q=w2400" alt="Serene Landscape">
-        </a>
-    </div>
-        <!-- Photo 3 -->
-    <div class="photo">
-        <a href="https://lh3.googleusercontent.com/pw/ABLVV861CyuqBs-U6vHkhQvJoo6Dm-2oSpXjuryttWcWqS9tYsBr4iCHQHGORDfY5tTPd9xrblwLcCF8T5pjQrcpiPu1SjtcuUJuvboassxEWEOXSWMWKW5q=w2400" target="_blank">
-            <img src="https://lh3.googleusercontent.com/pw/ABLVV861CyuqBs-U6vHkhQvJoo6Dm-2oSpXjuryttWcWqS9tYsBr4iCHQHGORDfY5tTPd9xrblwLcCF8T5pjQrcpiPu1SjtcuUJuvboassxEWEOXSWMWKW5q=w2400" alt="Serene Landscape">
-        </a>
-    </div>
-        <!-- Photo 3 -->
-    <div class="photo">
-        <a href="https://lh3.googleusercontent.com/pw/ABLVV861CyuqBs-U6vHkhQvJoo6Dm-2oSpXjuryttWcWqS9tYsBr4iCHQHGORDfY5tTPd9xrblwLcCF8T5pjQrcpiPu1SjtcuUJuvboassxEWEOXSWMWKW5q=w2400" target="_blank">
-            <img src="https://lh3.googleusercontent.com/pw/ABLVV861CyuqBs-U6vHkhQvJoo6Dm-2oSpXjuryttWcWqS9tYsBr4iCHQHGORDfY5tTPd9xrblwLcCF8T5pjQrcpiPu1SjtcuUJuvboassxEWEOXSWMWKW5q=w2400" alt="Serene Landscape">
-        </a>
-    </div>
-        <!-- Photo 3 -->
-    <div class="photo">
-        <a href="https://lh3.googleusercontent.com/pw/ABLVV861CyuqBs-U6vHkhQvJoo6Dm-2oSpXjuryttWcWqS9tYsBr4iCHQHGORDfY5tTPd9xrblwLcCF8T5pjQrcpiPu1SjtcuUJuvboassxEWEOXSWMWKW5q=w2400" target="_blank">
-            <img src="https://lh3.googleusercontent.com/pw/ABLVV861CyuqBs-U6vHkhQvJoo6Dm-2oSpXjuryttWcWqS9tYsBr4iCHQHGORDfY5tTPd9xrblwLcCF8T5pjQrcpiPu1SjtcuUJuvboassxEWEOXSWMWKW5q=w2400" alt="Serene Landscape">
-        </a>
-    </div>
-        <!-- Photo 3 -->
-    <div class="photo">
-        <a href="https://lh3.googleusercontent.com/pw/ABLVV861CyuqBs-U6vHkhQvJoo6Dm-2oSpXjuryttWcWqS9tYsBr4iCHQHGORDfY5tTPd9xrblwLcCF8T5pjQrcpiPu1SjtcuUJuvboassxEWEOXSWMWKW5q=w2400" target="_blank">
-            <img src="https://lh3.googleusercontent.com/pw/ABLVV861CyuqBs-U6vHkhQvJoo6Dm-2oSpXjuryttWcWqS9tYsBr4iCHQHGORDfY5tTPd9xrblwLcCF8T5pjQrcpiPu1SjtcuUJuvboassxEWEOXSWMWKW5q=w2400" alt="Serene Landscape">
-        </a>
-    </div>
-        <!-- Photo 3 -->
-    <div class="photo">
-        <a href="https://lh3.googleusercontent.com/pw/ABLVV861CyuqBs-U6vHkhQvJoo6Dm-2oSpXjuryttWcWqS9tYsBr4iCHQHGORDfY5tTPd9xrblwLcCF8T5pjQrcpiPu1SjtcuUJuvboassxEWEOXSWMWKW5q=w2400" target="_blank">
-            <img src="https://lh3.googleusercontent.com/pw/ABLVV861CyuqBs-U6vHkhQvJoo6Dm-2oSpXjuryttWcWqS9tYsBr4iCHQHGORDfY5tTPd9xrblwLcCF8T5pjQrcpiPu1SjtcuUJuvboassxEWEOXSWMWKW5q=w2400" alt="Serene Landscape">
-        </a>
-    </div>
-        <!-- Photo 3 -->
-    <div class="photo">
-        <a href="https://lh3.googleusercontent.com/pw/ABLVV861CyuqBs-U6vHkhQvJoo6Dm-2oSpXjuryttWcWqS9tYsBr4iCHQHGORDfY5tTPd9xrblwLcCF8T5pjQrcpiPu1SjtcuUJuvboassxEWEOXSWMWKW5q=w2400" target="_blank">
-            <img src="https://lh3.googleusercontent.com/pw/ABLVV861CyuqBs-U6vHkhQvJoo6Dm-2oSpXjuryttWcWqS9tYsBr4iCHQHGORDfY5tTPd9xrblwLcCF8T5pjQrcpiPu1SjtcuUJuvboassxEWEOXSWMWKW5q=w2400" alt="Serene Landscape">
-        </a>
-    </div>
-        <!-- Photo 3 -->
-    <div class="photo">
-        <a href="https://lh3.googleusercontent.com/pw/ABLVV861CyuqBs-U6vHkhQvJoo6Dm-2oSpXjuryttWcWqS9tYsBr4iCHQHGORDfY5tTPd9xrblwLcCF8T5pjQrcpiPu1SjtcuUJuvboassxEWEOXSWMWKW5q=w2400" target="_blank">
-            <img src="https://lh3.googleusercontent.com/pw/ABLVV861CyuqBs-U6vHkhQvJoo6Dm-2oSpXjuryttWcWqS9tYsBr4iCHQHGORDfY5tTPd9xrblwLcCF8T5pjQrcpiPu1SjtcuUJuvboassxEWEOXSWMWKW5q=w2400" alt="Serene Landscape">
-        </a>
-    </div>
-        <!-- Photo 3 -->
-    <div class="photo">
-        <a href="https://lh3.googleusercontent.com/pw/ABLVV861CyuqBs-U6vHkhQvJoo6Dm-2oSpXjuryttWcWqS9tYsBr4iCHQHGORDfY5tTPd9xrblwLcCF8T5pjQrcpiPu1SjtcuUJuvboassxEWEOXSWMWKW5q=w2400" target="_blank">
-            <img src="https://lh3.googleusercontent.com/pw/ABLVV861CyuqBs-U6vHkhQvJoo6Dm-2oSpXjuryttWcWqS9tYsBr4iCHQHGORDfY5tTPd9xrblwLcCF8T5pjQrcpiPu1SjtcuUJuvboassxEWEOXSWMWKW5q=w2400" alt="Serene Landscape">
-        </a>
-    </div>
+    <main class="container">
+        <h1>Victor Trocki Art</h1>
+        <div class="grid">
+            <figure>
+                <img src="https://lh3.googleusercontent.com/pw/ABLVV86y3pUG5ULghxETnliL-Gs-O2BufYoG6HSrpW80agY3c738A8upWrx6gVxuZV8SiqL6beDDjvB5SHzq8B_3ymxc-1cPo3Mn1oLhnx3d_H4kf9Prph6_=w2400" alt="Image 1">
+                <figcaption class="image-label">Image 1</figcaption>
+            </figure>
+            <!-- Add more images with labels here -->
+            <figure>
+                <img src="https://lh3.googleusercontent.com/pw/ABLVV861CyuqBs-U6vHkhQvJoo6Dm-2oSpXjuryttWcWqS9tYsBr4iCHQHGORDfY5tTPd9xrblwLcCF8T5pjQrcpiPu1SjtcuUJuvboassxEWEOXSWMWKW5q=w2400" alt="Image 2">
+                <figcaption class="image-label">Image 2</figcaption>
+            </figure>
+            <!-- Add more images with labels here -->
+            <figure>
+                <img src="https://lh3.googleusercontent.com/pw/ABLVV877GqNnk8DT9xgBZzWNUUPV4UFsIU5tiE-BL5tBKIi5-jq5-xP6Loh4HppOt8et1L94N8xDOSfeKU7Smrig2wWrDjuIXTyHK3DtYOcac5x5KZJIaYGa=w2400" alt="Image 3">
+                <figcaption class="image-label">Image 3</figcaption>
+            </figure>
+            <!-- Add more images with labels here -->
+        </div>
+    </main>
 
-
-</div>
-
+    <script>
+        // Open images in full screen on click
+        const images = document.querySelectorAll('.grid img');
+        images.forEach(image => {
+            image.addEventListener('click', () => {
+                window.open(image.src, '_blank');
+            });
+        });
+    </script>
 </body>
+
 </html>
